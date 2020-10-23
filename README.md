@@ -1,4 +1,4 @@
-# :fire: Linux Scripts :fire:
+# Linux Scripts :fire:
 
 This repository is essential for those who want to have more flexibility in post-formatting Linux. I developed a Shell Script so that several programs on Linux can be installed more easily, without having to search for installation commands for your favorite program over the internet.
 

@@ -33,9 +33,9 @@ echo
 echo " Installing neofetch"
 dnf install neofetch
 echo
-echo "Installing Tweaks"
 echo
-dnf install gnome-tweak-tool
+dnf install neofetch
+echo
 echo
 echo "Installing Libreoffice"
 echo

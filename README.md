@@ -6,6 +6,40 @@ I created this repository to facilitate the installation of my favorite Linux ap
 * Ubuntu 20.04
 * Fedora 33
 
+# Applications that will be installed
+### Ubuntu 20.04
+* VIM
+* Steam
+* Noefetch
+* GIMP
+* Gnome Disks
+* OBS Studio
+* Kdenlive
+* Unzip
+* VLC
+
+### Fedora 33
+* RPM Fusion FREE
+* RPM Fusion NonFREE
+* Gnome Tweaks Tool
+* Steam
+* Spotify
+* GIMP
+* k3b
+* Brasero
+* Gparted
+* Kdenlive
+* OBS Studio
+* VIM
+* VLC
+* Unzip
+* HTOP
+* SAMBA
+* Neofetch
+* Sublime Text
+* Visual Studio Code
+
+
 # How to use
 #### Download this repository
 #### Extract to a folder of your choice

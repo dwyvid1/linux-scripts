@@ -31,6 +31,10 @@ echo "Installing OBS Studio"
 echo
 apt install obs-studio
 echo
+echo "Installing Kdenlive"
+echo
+apt install kdenlive
+echo
 echo "Installing Unzip"
 echo
 apt install unzip

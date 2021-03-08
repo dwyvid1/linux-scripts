@@ -6,7 +6,7 @@ I created this repository to facilitate the installation of my favorite Linux ap
 * Ubuntu 20.04
 * Fedora 33
 
-# Applications that will be installed
+# Applications that will be installed :computer:
 ### Ubuntu 20.04
 * VIM
 * Steam

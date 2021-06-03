@@ -26,29 +26,23 @@ I created this repository to facilitate the installation of my favorite Linux ap
 * RPM Fusion NonFREE
 * Gnome Tweaks Tool
 * Steam
-* Spotify
 * GIMP
-* k3b
-* Brasero
-* Gparted
 * Kdenlive
 * OBS Studio
 * VIM
 * VLC
 * Unzip
 * HTOP
-* SAMBA
 * Neofetch
 * Sublime Text
 * Visual Studio Code
-
 
 # How to use :rocket:
 
 #### Download this repository;
 #### Extract to a folder of your choice;
 #### In the Linux Terminal, type the following command:
-* cd /fedora
+* cd linux-scripts/fedora/
 * chmod +x fedora-workstation.sh
 #### After that, the script will be ready to be used, so type the following command:
 * ./fedora-workstation.sh 

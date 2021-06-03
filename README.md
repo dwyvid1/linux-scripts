@@ -20,7 +20,7 @@ I created this repository to facilitate the installation of my favorite Linux ap
 * Unzip
 * VLC
 
-### Fedora 33
+### Fedora 34
 
 * RPM Fusion FREE
 * RPM Fusion NonFREE

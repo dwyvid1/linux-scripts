@@ -1,7 +1,5 @@
 #!/bin/bash
 
-# Ubuntu 20.04 tested.
-
 echo
 echo "System update"
 echo

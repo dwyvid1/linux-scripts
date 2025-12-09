@@ -2,7 +2,7 @@
 
 Criei este repositório com o objetivo de facilitar e agilizar a instalação de pacotes e configurações essenciais em distribuições Linux específicas.
 
-# How to use :rocket:
+# Como usar :rocket:
 
 1. Faça o download deste repositório;
 2. Extraia o conteúdo para uma pasta de sua preferência;

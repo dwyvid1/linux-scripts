@@ -1,50 +1,16 @@
 # Linux Scripts :pushpin:
 
-I created this repository to facilitate the installation of my favorite Linux applications.
-
-### Accessible for the following distributions:
-
-* Ubuntu 20.04
-* Fedora 33
-
-# Applications that will be installed :computer:
-
-### Ubuntu 20.04
-* VIM
-* Steam
-* Noefetch
-* GIMP
-* Gnome Disks
-* OBS Studio
-* Kdenlive
-* Unzip
-* VLC
-
-### Fedora 34
-
-* RPM Fusion FREE
-* RPM Fusion NonFREE
-* Gnome Tweaks Tool
-* Steam
-* GIMP
-* Kdenlive
-* OBS Studio
-* VIM
-* VLC
-* Unzip
-* HTOP
-* Neofetch
-* Sublime Text
-* Visual Studio Code
+Criei este repositório com o objetivo de facilitar e agilizar a instalação de pacotes e configurações essenciais em distribuições Linux específicas.
 
 # How to use :rocket:
 
-#### Download this repository;
-#### Extract to a folder of your choice;
-#### In the Linux Terminal, type the following command:
+1. Faça o download deste repositório;
+2. Extraia o conteúdo para uma pasta de sua preferência;
+3. Abra o terminal e execute os comandos abaixo de acordo com sua distribuição:
+
 * cd linux-scripts/fedora/
 * chmod +x fedora-workstation.sh
-#### After that, the script will be ready to be used, so type the following command:
+#### Após conceder permissão de execução, execute o script: command:
 * ./fedora-workstation.sh 
 
 ---

@@ -1,116 +1,86 @@
-# Ativar LED do Scroll Lock (KDE)
+Ativar LED do Scroll Lock (KDE)
 
 Este guia mostra como **ativar o LED do Scroll Lock** em sistemas Linux usando **KDE Plasma**, criando um **script** simples e associando-o a um **atalho de teclado**. 
 Este procedimento é útil quando o LED do teclado **não responde automaticamente** ao pressionar a tecla Scroll Lock, algo comum em alguns teclados e ambientes gráficos. 
 Os passos abaixo utilizam recursos padrão do Linux e do KDE Plasma. O procedimento pode ser adaptado para outras distribuições e ambientes gráficos com pequenas alterações.
 
-## Passo 1 — Identificar o dispositivo do LED Scroll Lock
+Passo 1 — Identificar o dispositivo do LED Scroll Lock
 
 Abra o terminal e execute:
 
-```bash
 ls /sys/class/leds/
-```
 
 Procure por algo parecido com:
 
-```text
 input2::scrolllock
-```
 
 > O número (`input2`) pode variar dependendo do teclado.
 
----
-
-## Passo 2 — Testar se o LED pode ser ligado manualmente
+Passo 2 — Testar se o LED pode ser ligado manualmente
 
 Execute:
 
-```bash
 echo 1 | sudo tee /sys/class/leds/input2::scrolllock/brightness
-```
 
-* Se o LED **acender**, continue.
-* Se não, verifique se o nome do LED está correto.
+Se o LED acender, continue.
+Se não, verifique se o nome do LED está correto.
 
-## Passo 3 — Criar o script
+Passo 3 — Criar o script
 
-Crie o arquivo na sua **HOME**:
+Crie o arquivo na sua HOME:
 
-```bash
 nano ~/led_scrolllock.sh
-```
 
 Cole o conteúdo:
 
-```bash
 #!/bin/bash
 echo 1 | sudo tee /sys/class/leds/input2::scrolllock/brightness
-```
 
-Salve (`Ctrl+O`, Enter) e saia (`Ctrl+X`).
+Salve (Ctrl+O, Enter) e saia (Ctrl+X).
 
 Torne o script executável:
 
-```bash
 chmod +x ~/led_scrolllock.sh
-```
 
----
-
-## Passo 4 — Permitir execução sem senha (opcional, mas recomendado)
+Passo 4 — Permitir execução sem senha (opcional, mas recomendado)
 
 Edite o arquivo sudoers:
 
-```bash
 sudo visudo
-```
 
-Adicione **no final do arquivo**:
+Adicione no final do arquivo:
 
-```text
 seuusuario ALL=(ALL) NOPASSWD: /usr/bin/tee
-```
 
-> Substitua `seuusuario` pelo nome do seu usuário.
+> Substitua "seuusuario" pelo nome do seu usuário.
 
----
+Passo 5 — Criar atalho no KDE
 
-## ⌨️ Passo 5 — Criar atalho no KDE
+1. Abra Configurações do Sistema
+2. Vá em Atalhos
+3. Clique em Atalhos Personalizados
+4. Selecione Editar → Novo → Atalho Global → Comando/URL
 
-1. Abra **Configurações do Sistema**
-2. Vá em **Atalhos**
-3. Clique em **Atalhos Personalizados**
-4. Selecione **Editar → Novo → Atalho Global → Comando/URL**
-
-### Configure:
+Configure:
 
 Ativar Scroll Lock LED
 Comando: ctrl + alt + s
 
-```bash
 /home/seuusuario/led_scrolllock.sh
-`
----
 
-## Passo 6 — Definir a tecla de atalho
+Passo 6 — Definir a tecla de atalho
 
-* Clique em **Nenhum**
-* Pressione a tecla desejada (ex: `Scroll Lock` ou `Ctrl+Alt+S`)
-* Clique em **Aplicar**
+Clique em **Nenhum**
+Pressione a tecla desejada (ex: `Scroll Lock` ou `Ctrl+Alt+S`)
+Clique em **Aplicar**
 
----
+Teste final
 
-## ️Teste final
+Pressione o atalho configurado
+O LED do Scroll Lock deve acender
 
-* Pressione o atalho configurado
-* O LED do Scroll Lock deve acender
-
----
-
-## Estrutura final
+Estrutura final
 
 O script ficará localizado na pasta pessoal do usuário:
 
-```text
 /home/seuusuario/led_scrolllock.sh
